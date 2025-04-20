@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusAI Chat</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Conversations</h2>
+                <button id="newChatBtn" class="new-chat-btn">
+                    <i class="fas fa-plus"></i> New
+                </button>
+            </div>
+            <div class="conversation-list" id="conversationList">
+                <!-- Conversation items will be added here -->
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1><span class="brand-name">Nexus</span><span class="brand-ai">AI</span></h1>
+            </div>
+            <div class="chat-history" id="chatHistory">
+                <!-- Messages will appear here with the new styling -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask NexusAI anything...">
+                <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

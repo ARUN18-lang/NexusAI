@@ -1,0 +1,13 @@
+[project]
+name = "mcp-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11.0"
+dependencies = [
+    "flask[async]>=3.1.0",
+    "flask-cors>=5.0.1",
+    "langchain-groq>=0.3.2",
+    "mcp>=1.6.0",
+    "mcp-use>=1.2.5",
+]
