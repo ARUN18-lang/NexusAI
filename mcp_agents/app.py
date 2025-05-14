@@ -140,8 +140,13 @@ async def get_history():
 
 @app.teardown_appcontext
 async def shutdown(exception=None):
-    if client and client.sessions:
-        await client.close_all_sessions()
+    global client
+    try:
+        if client and hasattr(client, "sessions"):
+            await client.close_all_sessions()
+    except NameError:
+        pass  
+
 
 async def create_app():
     await initialize_agent()
