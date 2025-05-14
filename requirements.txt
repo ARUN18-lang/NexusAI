@@ -1,0 +1,8 @@
+Flask
+python-dotenv
+flask-cors
+hypercorn
+langchain
+langchain-groq
+mcp
+mcp-use
